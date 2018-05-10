@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Home Example </title>
+    <div th:replace="fragments/header :: header-css"/>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+    <h2>You're logged in correctly! Welcome back admin</h2>
+    <center>
+    <form method="get" action="/BlogAdmin">
+        <button type="submit">Continue</button>
+    </form>
+        </center>
+</div>
+    <center>
+            <h1>BLOG OPSLAG</h1>
+
+                <td th:text="${posts}" /> <p></p></tr>
+
+
+
+
+    </center>
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>
